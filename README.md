@@ -47,3 +47,4 @@ Use the deployed API URL in place of `http://localhost:3000` when deploying. On 
 - `type` must match one of the enquiry categories displayed on the booking form.
 - At most one `.pdf`, `.doc`, `.docx`, or `.txt` attachment is accepted; maximum size is 8 MB.
 - Maximum 10 submissions per IP address per 15-minute window.
+- tiny update to enable auto fetch
