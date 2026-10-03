@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/dgttycom/domains/email-service.dgtty.com/public_html/
+    - /bin/cp package.json $DEPLOYPATH
+    - /bin/cp package-lock.json $DEPLOYPATH
+    - /bin/cp server.js $DEPLOYPATH
+    - /bin/cp server.test.js $DEPLOYPATH
+    - /bin/cp README.md $DEPLOYPATH
