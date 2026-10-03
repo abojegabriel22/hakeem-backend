@@ -222,6 +222,13 @@ function buildEmail(booking, attachment) {
   }
 }
 
+app.get('/', (_req, res) => {
+  res.json({
+    status: 'ok',
+    service: 'Hakeem Booking Email API',
+  })
+})
+
 app.post('/api/booking', (req, res, next) => {
   if (req.is('multipart/form-data')) {
     upload.single('attachment')(req, res, (error) => {
