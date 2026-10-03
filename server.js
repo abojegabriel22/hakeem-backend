@@ -292,10 +292,8 @@ app.use((error, _req, res, _next) => {
   res.status(500).json({ error: 'An unexpected error occurred.' })
 })
 
-if (require.main === module) {
-  app.listen(port, () => {
-    console.log(`Booking email API listening on port ${port}`)
-  })
-}
+app.listen(port, () => {
+  console.log(`Booking email API listening on port ${port}`)
+})
 
 module.exports = { app, buildEmail, normalizeBooking }
